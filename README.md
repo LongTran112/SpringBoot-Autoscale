@@ -1,6 +1,6 @@
 # Spring Boot Application Autoscale with Kubernetes Deployment
 
-This project demonstrates a Spring Boot application designed for deployment on Kubernetes with autoscaling, monitoring, and CI/CD integration.
+This project demonstrates a Spring Boot application designed for deployment on Kubernetes with autoscaling, monitoring, and CI/CD integration as part of Cloud Computing course from Hochschule Fulda.
 
 ## Features
 
