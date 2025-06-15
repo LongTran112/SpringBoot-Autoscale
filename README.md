@@ -72,12 +72,12 @@ mvn -Dtest=HelloControllerTest test
 
 ### Build Docker image
 ```bash
-docker build -t yourusername/springboot-app:latest .
+docker build -t longtran112/springboot-app:latest .
 ```
 
 ### Run Docker container
 ```bash
-docker run -p 8080:8080 yourusername/springboot-app
+docker run -p 8080:8080 longtran112/springboot-app
 ```
 
 ## Kubernetes Deployment
@@ -153,12 +153,6 @@ The application exposes metrics for:
 2. JVM Micrometer: ID 4701
 3. Kubernetes Cluster Monitoring: ID 3119
 
-## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a pull request
 
 
