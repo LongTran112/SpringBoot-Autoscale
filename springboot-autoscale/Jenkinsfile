@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/longtran112/springboot-app.git'
+                git branch: 'main', url: 'https://github.com/LongTran112/SpringBoot-Autoscale.git'
             }
         }
         stage('Build') {
