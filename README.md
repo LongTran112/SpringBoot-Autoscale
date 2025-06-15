@@ -11,6 +11,9 @@ This project demonstrates a Spring Boot application designed for deployment on K
 - Kubernetes deployment-ready
 - Autoscaling compatible
 
+## Architecture diagram
+![alt text](Architecture_with_CI:CD.png)
+
 ## Prerequisites
 
 - Java 11
