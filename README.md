@@ -12,7 +12,7 @@ This project demonstrates a Spring Boot application designed for deployment on K
 - Autoscaling compatible
 
 ## Architecture diagram
-![alt text](Architecture_with_CI:CD.png)
+<img width="989" alt="Architecture_with_CI:CD" src="https://github.com/user-attachments/assets/2e4d772b-947d-41a4-83e8-ea878ef8c734" />
 
 ## Prerequisites
 
