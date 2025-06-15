@@ -19,7 +19,8 @@
 		<java.version>17</java.version>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<micrometer.version>1.9.0</micrometer.version>
+		<spring-boot.version>3.2.5</spring-boot.version> <!-- Stable version -->
+		<micrometer.version>1.12.5</micrometer.version> <!-- Matching version -->
 	</properties>
 
 	<dependencies>
@@ -55,6 +56,20 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.company.autoscale.AutoscaleApplication</mainClass>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
