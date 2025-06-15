@@ -16,7 +16,7 @@ This project demonstrates a Spring Boot application designed for deployment on K
 
 ## Prerequisites
 
-- Java 11
+- Java 17
 - Maven 3.8+
 - Docker
 - Kubernetes cluster (or Docker Desktop for local testing)
