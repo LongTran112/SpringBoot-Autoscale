@@ -1,3 +1,9 @@
+Team members:
+<br>
+Long Phan-Phuc Tran 1573950
+<br>
+Sahaj Bikram Malla 1563270
+
 # Spring Boot Application Autoscale with Kubernetes Deployment
 
 This project demonstrates a Spring Boot application designed for deployment on Kubernetes with autoscaling, monitoring, and CI/CD integration as part of Cloud Computing course from Hochschule Fulda.
