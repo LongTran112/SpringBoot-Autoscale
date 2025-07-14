@@ -124,8 +124,37 @@ management.endpoint.prometheus.enabled=true
 management.metrics.export.prometheus.enabled=true
 ```
 
-## CI/CD Integration
 
+
+## Autoscaling Configuration
+Two approaches are implemented:
+CPU-Based Scaling (HPA):
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+spec:
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50
+  minReplicas: 1
+  maxReplicas: 10
+```
+
+HTTP Request-Based Scaling (KEDA + Prometheus):
+KEDA ScaledObject tracks HTTP requests per second:
+
+```yaml
+triggers:
+  - type: prometheus
+    metadata:
+      metricName: http_requests_total
+      threshold: "100" # Scale if >100 req/sec/pod## CI/CD Integration
+```
 The application is ready for Jenkins CI/CD pipelines with:
 - Docker image building
 - Push to DockerHub and Artifactory
