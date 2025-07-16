@@ -3,6 +3,12 @@ Team members:
 Long Phan-Phuc Tran 1573950
 <br>
 Sahaj Bikram Malla 1563270
+<br>
+<br>
+Group:
+<br>
+CloudComp44
+<br>
 
 # Spring Boot Application Autoscale with Kubernetes Deployment
 
